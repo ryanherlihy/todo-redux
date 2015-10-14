@@ -4,8 +4,10 @@ Simple todo app using react, redux, react router, and immutable.js.
 ### Usage
 Clone this repo. Then,
 
-```npm install```
+```
+npm install
 
-```webpack-dev-server```
+webpack-dev-server
+```
 
 Go to localhost:8080
