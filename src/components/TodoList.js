@@ -25,6 +25,7 @@ export class TodoList extends Component {
 
     return (
       <div>
+        <p>Click a todo to send to Completed Todos list</p>
         <h2>Todos</h2>
         <TodoInput addTodo={this.props.addTodo} />
         <ul>

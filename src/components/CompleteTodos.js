@@ -20,6 +20,7 @@ class CompleteTodos extends Component {
 
     return (
       <div>
+        <p>Click a todo to send back to Todo List</p>
         <h2>Completed Todos</h2>
         <ul>
           {todos}
