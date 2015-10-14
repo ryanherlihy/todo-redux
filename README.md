@@ -7,7 +7,7 @@ Clone this repo. Then,
 ```
 npm install
 
-webpack-dev-server
+npm run start
 ```
 
 Go to localhost:8080
