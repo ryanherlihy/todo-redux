@@ -16,7 +16,7 @@ export class TodoList extends Component {
     let todos = this.props.todos.map((todo, index) => {
       if (todo.completed === false) {
         return (
-          <li key={index}>
+          <li key={index} className='list-group-item'>
             <Todo text={todo.text} id={index} completeTodo={this.props.completeTodo} />
           </li>
         )
@@ -24,11 +24,11 @@ export class TodoList extends Component {
     });
 
     return (
-      <div>
+      <div className='panel panel-default'>
         <p>Click a todo to send to Completed Todos list</p>
-        <h2>Todos</h2>
+        <h2 className='text-center'>Todos</h2>
         <TodoInput addTodo={this.props.addTodo} />
-        <ul>
+        <ul className='list-group'>
           {todos}
         </ul>
       </div>
