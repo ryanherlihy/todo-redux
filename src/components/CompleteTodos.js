@@ -20,11 +20,14 @@ class CompleteTodos extends Component {
 
     return (
       <div className='panel panel-default'>
-        <p>Click a todo to send back to Todo List</p>
-        <h2 className='text-center'>Completed Todos</h2>
-        <ul className='list-group'>
-          {todos}
-        </ul>
+        <div className='panel-heading'>
+          <h2 className='text-center'>Completed Todos</h2>
+        </div>
+        <div className='panel-body'>
+          <ul className='list-group'>
+            {todos}
+          </ul>
+        </div>
       </div>
     )
   }

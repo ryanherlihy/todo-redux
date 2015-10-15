@@ -8,7 +8,10 @@ class Todo extends Component {
   render() {
     return (
       <div>
-        <button className='btn btn-success' onClick={this.handleCompleteTodo.bind(this)}>
+        <button
+          className='btn btn-success'
+          onClick={this.handleCompleteTodo.bind(this)}
+          style={{marginRight: 10}}>
           <span className='glyphicon glyphicon-ok'></span>
         </button>
         {this.props.text}

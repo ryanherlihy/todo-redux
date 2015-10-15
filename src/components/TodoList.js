@@ -24,13 +24,16 @@ export class TodoList extends Component {
     });
 
     return (
-      <div className='panel panel-default'>
-        <p>Click a todo to send to Completed Todos list</p>
-        <h2 className='text-center'>Todos</h2>
-        <TodoInput addTodo={this.props.addTodo} />
-        <ul className='list-group'>
-          {todos}
-        </ul>
+      <div className='panel panel-primary'>
+        <div className='panel-heading'>
+          <h2 className='text-center'>Todos</h2>
+        </div>
+        <div className='panel-body'>
+          <TodoInput addTodo={this.props.addTodo} />
+          <ul className='list-group'>
+            {todos}
+          </ul>
+        </div>
       </div>
     );
   }
