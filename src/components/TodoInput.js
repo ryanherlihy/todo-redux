@@ -18,17 +18,19 @@ class TodoInput extends Component {
 
   render() {
     return (
-      <div className='container-fluid'>
-        <div className='row'>
+      <div className='container'>
+        <div className='input-field'>
           <input
             ref='createTodo'
             type='text'
             placeholder={'Enter new todo'}
-            className='form-control' />
-          <button
-            className='btn btn-primary col-md-2 col-md-offset-5'
-            style={{marginTop: 20, marginBottom: 20}}
-            onClick={this.handleAddTodo}>Create</button>
+            className='validate' />
+          <div className='valign-wrapper'>
+            <button
+              className='btn col m6 valign'
+              style={{marginTop: 20, marginBottom: 20}}
+              onClick={this.handleAddTodo}>Create</button>
+          </div>
         </div>
       </div>
     )

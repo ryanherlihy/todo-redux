@@ -5,17 +5,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <nav className='navbar navbar-default'>
-          <div className='container-fluid'>
-            <ul className='nav navbar-nav'>
-              <li><Link to='/todolist'>Todo List</Link></li>
-              <li><Link to='/completed'>Completed Todos</Link></li>
-            </ul>
-          </div>
+        <nav className='nav-wrapper'>
+          <ul className='left hide-on-med-and-down'>
+            <li><Link to='/todolist'>Todo List</Link></li>
+            <li><Link to='/completed'>Completed Todos</Link></li>
+          </ul>
         </nav>
-        <div className='container-fluid'>
+        <div className='container'>
           <div className='row'>
-            <div className='col-md-6 col-md-offset-3'>
+            <div className='col m6 offset-m3'>
               {this.props.children}
             </div>
           </div>

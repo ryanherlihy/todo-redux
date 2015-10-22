@@ -8,7 +8,7 @@ class CompleteTodos extends Component {
     let todos = this.props.todos.map((todo, index) => {
       if (todo.completed === true) {
         return (
-          <li key={index} className='list-group-item'>
+          <li key={index}>
             <Todo
               text={todo.text}
               id={index}
@@ -19,12 +19,10 @@ class CompleteTodos extends Component {
     });
 
     return (
-      <div className='panel panel-default'>
-        <div className='panel-heading'>
-          <h2 className='text-center'>Completed Todos</h2>
-        </div>
-        <div className='panel-body'>
-          <ul className='list-group'>
+      <div className='card'>
+        <div className='card-content'>
+          <span className='card-title grey-text'>Completed Todos</span>
+          <ul>
             {todos}
           </ul>
         </div>
